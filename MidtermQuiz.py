@@ -20,9 +20,10 @@ class DistanceConversion:
         print('Enter the value of the distance:')
         value = float(input())
         print('Enter the unit of the value of the distance (m):')
-        input_conversion = input().upper()
-        print('Enter the intended unit of the value of the distance (cm, km, ot in)')
-        output_conversion = input().upper()
+        input_conversion = input()
+        print('Enter the intended unit of the value of the distance (cm, km, or in)')
+        output_conversion = input()
 
         result = distance_conversion(value, input_conversion, output_conversion)
         print(f'{value} {input_conversion} = {result} {output_conversion}')
+        break
